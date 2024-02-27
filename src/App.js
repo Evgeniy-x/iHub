@@ -1,15 +1,31 @@
-// import logo from './logo.svg';
 import "./App.css";
+import Header from "./components/Header/Header";
+// import AppRoutes from "./routes/AppRoutes/AppRoutes";
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+// import { loadItems } from "./store/all-items/operations";
+// import { allItemsLoading } from "./store/all-items/selectors";
+// import Loader from "./components/Loader/Loader";
 
-function App() {
+const App = () => {
+  const dispatch = useDispatch();
+  // const isLoading = useSelector(allItemsLoading);
+
+  // useEffect(() => {
+  //   dispatch(loadItems());
+  // }, [dispatch]);
+
+  // if (isLoading) {
+  //   // return Loader before the content has loaded
+  //   return <Loader />;
+  // }
+
   return (
     <div className="App">
-      <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <p>Edit and save to reload.</p>
-      </header>
+      <Header />
+      {/* <AppRoutes /> */}
     </div>
   );
-}
+};
 
 export default App;
