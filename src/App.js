@@ -1,6 +1,6 @@
 import "./App.css";
 import Header from "./components/Header/Header";
-// import AppRoutes from "./routes/AppRoutes/AppRoutes";
+import AppRoutes from "./routes/AppRoutes";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 // import { loadItems } from "./store/all-items/operations";
@@ -23,7 +23,7 @@ const App = () => {
   return (
     <div className="App">
       <Header />
-      {/* <AppRoutes /> */}
+      <AppRoutes />
     </div>
   );
 };
