@@ -1,7 +1,7 @@
 import React from "react";
 import "./Analitycs.scss";
 import { useSelector } from "react-redux";
-// import { getAllItems } from "../../store/all-items/selectors";
+import { getAllItems } from "../../redux/all-items/selectors";
 import AnalitycItem from "./AnalitycsItem";
 
 const Analitycs = () => {

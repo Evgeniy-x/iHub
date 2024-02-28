@@ -1,8 +1,8 @@
 import React from "react";
-// import "./Header.scss";
+import "./Header.scss";
 import { NavLink } from "react-router-dom";
-// import { useSelector } from "react-redux";
-// import { getAllItems } from "../../store/all-items/selectors";
+import { useSelector } from "react-redux";
+import { getAllItems } from "../../redux/all-items/selectors";
 
 const headerItems = [
   // put all header items in arr
@@ -18,9 +18,9 @@ const headerItems = [
 ];
 
 const Header = () => {
-  // const items = useSelector(getAllItems);
-  //   const favNum = items.filter((e) => e.isFavourite).length;
-  //   const disfavNum = items.filter((e) => e.isDisfavourite).length;
+  const items = useSelector(getAllItems);
+  const favNum = items.filter((e) => e.isFavourite).length;
+  const disfavNum = items.filter((e) => e.isDisfavourite).length;
   const classNameNavLink = "header__item";
   const classNameCounter = "header__counter";
 
@@ -33,20 +33,18 @@ const Header = () => {
         key={index}
         exact
         to={e.path}
-        activeStyle={{ color: "coral" }}
+        // activeStyle={{ color: "coral" }}
         className={classNameNavLink}
       >
         {e.textContent}
-        {
-          e.counter && // if we have at least one item in fav or disfav, we show counter
-            e.path === "/favourites"
-          //   ? favNum > 0 && <span className={classNameCounter}>{favNum}</span> // counter for favourites
-          //   : e.path === "/disfavourites"
-          //   ? disfavNum > 0 && (
-          //       <span className={classNameCounter}>{disfavNum}</span>
-          //     ) // counter for disfavourites
-          //           : null
-        }
+        {e.counter && // if we have at least one item in fav or disfav, we show counter
+        e.path === "/favourites"
+          ? favNum > 0 && <span className={classNameCounter}>{favNum}</span> // counter for favourites
+          : e.path === "/disfavourites"
+          ? disfavNum > 0 && (
+              <span className={classNameCounter}>{disfavNum}</span>
+            ) // counter for disfavourites
+          : null}
       </NavLink>
     )
   );

@@ -7,21 +7,21 @@ import Analitycs from "../pages/Analitycs/Analitycs";
 
 const AppRoutes = () => (
   <Routes>
-    <Route exact path="/" component={() => <SpecialistsTab content="all" />} />
+    {/* <Route exact path="/" element={() => <SpecialistsTab content="all" />} /> */}
     <Route
       path="/favourites"
       exact
-      component={() => <SpecialistsTab content="favourites" />}
+      // element={() => <SpecialistsTab content="favourites" />}
     />
     <Route
       exact
       path="/disfavourites"
-      component={() => <SpecialistsTab content="disfavourites" />}
+      // element={() => <SpecialistsTab content="disfavourites" />}
     />
-    <Route exact path="/add-specialist" component={AddSpecialist} />
-    <Route exact path="/analitycs" component={Analitycs} />
+    {/* <Route exact path="/add-specialist" element={AddSpecialist} /> */}
+    <Route exact path="/analitycs" element={<Analitycs />} />
 
-    <Route path="*" component={(routeProps) => <Page404 {...routeProps} />} />
+    <Route path="*" element={(routeProps) => <Page404 {...routeProps} />} />
   </Routes>
 );
 
