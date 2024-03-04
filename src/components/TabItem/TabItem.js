@@ -2,7 +2,7 @@ import React from "react";
 import "./TabItem.scss";
 import PropTypes from "prop-types";
 import ActionButton from "../ActionButton/ActionButton";
-import { deleteItem } from "../../store/all-items/operations";
+import { deleteItem } from "../../redux/all-items/operations";
 import { useDispatch } from "react-redux";
 
 const TabItem = ({ item }) => {

@@ -1,0 +1,18 @@
+.specialists {
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 0px solid;
+    border-radius: 10px;
+    padding: 50px;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.15);
+    justify-items: center;
+  }
+  &__select {
+    &--field {
+      max-width: 30%;
+      margin: 0 auto;
+    }
+  }
+}

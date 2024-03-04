@@ -8,6 +8,7 @@ import {
 
 const initialState = {
   isLoading: false,
+  // isLoading: true,
   data: [],
 };
 
