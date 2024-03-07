@@ -1,9 +1,9 @@
 {
-  "name": "i-hub",
+  "name": "resto-waves",
   "main": "dist/index.js",
-  "version": "0.1.0",
+  "version": "5.0.0",
   "private": true,
-  "homepage": "https://evgeniy-x.github.io/i-hub/",
+  "homepage": "https://Evgeniy-x.github.io/resto-waves/",
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.1",
     "@testing-library/jest-dom": "^5.17.0",
