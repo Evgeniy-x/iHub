@@ -21,7 +21,7 @@ const AppRoutes = () => (
     <Route exact path="/add-specialist" element={<AddSpecialist />} />
     <Route exact path="/analitycs" element={<Analitycs />} />
 
-    {/* <Route path="*" element={(routeProps) => <Page404 {...routeProps} />} /> */}
+    <Route path="*" element={(routeProps) => <Page404 {...routeProps} />} />
   </Routes>
 );
 
