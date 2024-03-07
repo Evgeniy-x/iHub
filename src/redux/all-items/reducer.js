@@ -7,8 +7,8 @@ import {
 } from "./actionTypes";
 
 const initialState = {
-  isLoading: false,
-  // isLoading: true,
+  // isLoading: false,
+  isLoading: true,
   data: [],
 };
 
