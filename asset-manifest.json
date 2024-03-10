@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/i-hub/static/css/main.ef2d0c35.css",
+    "main.js": "/i-hub/static/js/main.a00f9262.js",
+    "index.html": "/i-hub/index.html",
+    "main.ef2d0c35.css.map": "/i-hub/static/css/main.ef2d0c35.css.map",
+    "main.a00f9262.js.map": "/i-hub/static/js/main.a00f9262.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ef2d0c35.css",
+    "static/js/main.a00f9262.js"
+  ]
+}
