@@ -2,6 +2,7 @@
   &__content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
     border: 0px solid;
     border-radius: 10px;
     padding: 50px;
